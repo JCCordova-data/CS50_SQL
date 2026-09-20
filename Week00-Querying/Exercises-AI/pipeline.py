@@ -11,10 +11,10 @@ daily_sells = [
 ]
 
 #the conection, if the file doesnt exist, sqlite3 will create it automatically in the current folder
-conection = sqlite3.connect("library.db")
+connection = sqlite3.connect("library.db")
 
-#the messenger
-cursor = conection.cursor()
+#Is used to execute SQL statements
+cursor = connection.cursor()
 
 #data ingestion
 cursor.execute(
@@ -40,7 +40,7 @@ for book in daily_sells:
     )
 
 #store the fixes using 'commit'
-conection.commit()
+connection.commit()
 
 #SQL + Python: 1
 print("\n========== Top 3 Best-Selling Books ==========\n")
@@ -59,7 +59,7 @@ top_books = cursor.fetchall()
 for row in top_books:
     print(f"{row[0]} by {row[1]}, Quantity: {row[2]}")
 
-#SQL + Python: 1
+#SQL + Python: 2
 print("\n========== Bestsellers of the Week ==========\n")
 
 #we are gonna execute the SQL query
@@ -79,4 +79,4 @@ for authors in bestsellers:
     print(f"Author: {authors[0]} | Earnings: {authors[1]}")
 
 #close the conection
-conection.close()
+connection.close()
