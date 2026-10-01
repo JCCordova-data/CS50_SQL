@@ -40,7 +40,7 @@ sql_tables = '''
 '''
 cursor.executescript(sql_tables)
 
-#Creating data for the tables, one correct and one with an error UNIQUE error, because the email in the two examples 
+#Creating data for the tables, one correct and one with an UNIQUE error, because the email in the two examples 
 # are the same. To solve that, we will use a try except block to catch the error and print a message to the user.
 query1 = '''
     INSERT OR IGNORE INTO "readers" (id, first_name, last_name, email) 
