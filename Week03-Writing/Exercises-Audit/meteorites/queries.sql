@@ -1,0 +1,1 @@
+DROP TABLE "meteorites_temp";
