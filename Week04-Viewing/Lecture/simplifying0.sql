@@ -1,4 +1,4 @@
--- Find books that Fernanda Melchor has written
+-- Find books that Fernanda Melchor had written
 SELECT "title" FROM "books"
 WHERE "id" IN (
     SELECT "book_id" FROM "authored"
