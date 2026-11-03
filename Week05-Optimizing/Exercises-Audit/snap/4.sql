@@ -1,3 +1,4 @@
+-- Fourth Requirement
 EXPLAIN QUERY PLAN
 SELECT "username" FROM "users"
 WHERE "id" = (

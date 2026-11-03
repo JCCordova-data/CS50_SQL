@@ -1,3 +1,4 @@
+-- Database schema
 CREATE TABLE IF NOT EXISTS "users" (
     "id" INTEGER,
     "username" TEXT NOT NULL UNIQUE,
