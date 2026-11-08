@@ -1,4 +1,4 @@
--- Third Requirement
+-- Third Requirement of the exercise
 EXPLAIN QUERY PLAN
 SELECT "to_user_id" FROM "messages"
 WHERE "from_user_id" = (
