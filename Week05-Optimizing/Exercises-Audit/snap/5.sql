@@ -1,4 +1,4 @@
--- Fifth Requirement of the exercise.
+-- Fifth Requirement of the Exercise.
 EXPLAIN QUERY PLAN
 SELECT "friend_id" FROM "friends"
 WHERE "user_id" = (
