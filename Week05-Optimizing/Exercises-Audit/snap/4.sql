@@ -1,4 +1,4 @@
--- Fourth Requirement of the exercise.
+-- Fourth Requirement of the Exercise.
 EXPLAIN QUERY PLAN
 SELECT "username" FROM "users"
 WHERE "id" = (
