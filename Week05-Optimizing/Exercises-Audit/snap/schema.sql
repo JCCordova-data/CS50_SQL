@@ -1,4 +1,4 @@
--- Database of the schema.
+-- Database of the Schema.
 CREATE TABLE IF NOT EXISTS "users" (
     "id" INTEGER,
     "username" TEXT NOT NULL UNIQUE,
